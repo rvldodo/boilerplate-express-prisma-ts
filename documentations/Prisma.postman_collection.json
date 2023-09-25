@@ -1,0 +1,122 @@
+{
+	"info": {
+		"_postman_id": "7c988b7a-29fc-45ec-b31a-d905ab49348f",
+		"name": "Prisma",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29519837"
+	},
+	"item": [
+		{
+			"name": "create user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"first_name\": \"Rivaldo\",\n    \"last_name\": \"Lawalata\",\n    \"email\": \"dodo5@gmail.com\",\n    \"password\": \"123321\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{dev}}users/register",
+					"host": [
+						"{{dev}}users"
+					],
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"dodo5@gmail.com\",\n    \"password\": \"123321\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{dev}}users/login",
+					"host": [
+						"{{dev}}users"
+					],
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all users",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "get a user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{dev}}users/137c83fd-ee05-47df-944e-8cda016d2596",
+					"host": [
+						"{{dev}}users"
+					],
+					"path": [
+						"137c83fd-ee05-47df-944e-8cda016d2596"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update user",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "{{dev}}/users/",
+					"host": [
+						"{{dev}}"
+					],
+					"path": [
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete user",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{dev}}users/",
+					"host": [
+						"{{dev}}users"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

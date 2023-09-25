@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "ESNext", // Specify the target ECMAScript version
+    "module": "CommonJS", // Specify the module system (CommonJS, ES6, etc.)
+    "outDir": "./dist", // Specify the output directory for compiled files
+    "rootDir": "./src", // Specify the root directory of your source code
+    "strict": true, // Enable strict type checking
+    "esModuleInterop": true, // Enable compatibility with CommonJS modules
+    "skipLibCheck": true // Skip type checking of declaration files (*.d.ts)
+  },
+  "include": ["src/**/*.ts", "custom.d.ts"], // Specify the files to be included for compilation
+  "exclude": ["node_modules"] // Specify the files/folders to be excluded from compilation
+}
